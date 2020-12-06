@@ -1,0 +1,10 @@
+SCREEN=On
+TITLE=Es6 - West Wind Web Connection
+EXCLUSIVE=OFF
+SAFETY=OFF
+CENTURY=ON
+STRICTDATE=0
+MEMOWIDTH=150
+_vfpstart=
+PATH=C:\WC710\classes;C:\WC710\;C:\WC710\tools;C:\WC710\samples\wwdemo;..\data;
+COMMAND=do wcstart

@@ -1,0 +1,6 @@
+USE act 
+
+REPLACE ccss WITH 'PBR' FOR itype < 1099
+SELECT actpk FROM genre WHERE ctypepk = 202 INTO ARRAY laC
+SELECT act
+REPLACE ccss WITH 'PBB' FOR ASCAN(laC,PK) > 0
