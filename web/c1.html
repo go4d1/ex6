@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello From MVG</h1> 
+    <h1>Hello From MVG</h1>
     <div id="mg">
-mg - div
+        mg - div
 
     </div>
-    
+
 </body>
 
 <script>
-mg= document.getElementById('mg')
-fetch('./c1.jx')
-.then(data=>data.json())
-.then(data=> parseit(data))
+    mg = document.getElementById('mg')
+    fetch('./c1.jx')
+        .then(data => data.json())
+        .then(data => parseit(data))
 
-function parseit(data){
-    c=''
-    data.forEach(element => {      
-        const {act,email,body:profile } = element
-c=c+ `<li><p>making progress <h2>${act}</h2> at</p> <p> ${email} for ${profile}</p></li>`
- });
-
- c= '<ul>'+c+'</ul>'
-
- mg.innerHTML = c
-}
-
+    function parseit(data) {
+        c = ''
+        data.forEach(element => {
+            const {
+                act,
+                email,
+                body: profile
+            } = element
+            c = c + `<li><p>making progress <h2>${act}</h2> at</p> <p> ${email} for ${profile}</p></li>`
+        });
+        c = '<ul>' + c + '</ul>'
+        mg.innerHTML = c
+    }
 </script>
+
 </html>
